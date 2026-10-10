@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="面向摩托车产品视觉设计师的职业方向导航台：保留心流，逐步获得产品判断与结果责任。" />
+  <title>职业方向导航台</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="返回顶部"><span class="brand-mark">SG</span><span>职业方向导航台</span></a>
+    <nav aria-label="页面导航"><a href="#position">现状</a><a href="#routes">路线</a><a href="#project">脚踏项目</a><a href="#plan">90天</a></nav>
+    <button id="depthToggle" class="toggle" type="button" aria-pressed="false"><span class="toggle-dot"></span><span id="depthLabel">速览模式</span></button>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">CAREER SYSTEM · 01</p>
+        <h1>保留你的<span>心流</span>，<br />扩大你的<span>影响范围</span>。</h1>
+        <p class="hero-lead">你不需要离开三维与视觉。真正的升级，是在制作之前拥有判断，在交付之后看见结果。</p>
+        <div class="hero-actions"><a class="primary-btn" href="#project">从脚踏项目开始</a><button class="ghost-btn" id="showFocus" type="button">今天先做什么？</button></div>
+        <div class="focus-callout" id="focusCallout" role="status" aria-live="polite"><strong>今天只做一件事：</strong>向项目负责人确认“目标车型、核心卖点、最终渠道”。</div>
+      </div>
+      <div class="hero-visual reveal" aria-label="从视觉执行到产品负责人的成长轨道示意">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="core"><span>你的核心</span><strong>深度制作</strong><small>C4D · Octane · AE · AI</small></div>
+        <div class="satellite sat-a"><b>+</b> 产品判断</div><div class="satellite sat-b"><b>+</b> 工程理解</div><div class="satellite sat-c"><b>+</b> 商业结果</div>
+      </div>
+    </section>
+
+    <section id="position" class="section-shell block-section">
+      <div class="section-heading reveal"><p class="eyebrow">CURRENT POSITION · 02</p><h2>你不是方向错误，<br />只是价值链站得太靠后。</h2><p class="deep-copy">现在的你擅长完成任务，却较少参与任务为何产生、产品如何定义，以及内容最终是否带来咨询与成交。职业升级的目标不是彻底换行，而是向价值链前后各走一步。</p></div>
+      <div class="position-grid">
+        <article class="status-card current reveal"><div class="status-index">NOW</div><h3>视觉执行者</h3><p>接收任务 → 软件制作 → 文件交付</p><ul><li>沉浸感强</li><li>反馈直接</li><li>容易被按工时定价</li></ul></article>
+        <div class="bridge reveal" aria-hidden="true"><span></span><b>增加两个环节</b><span></span></div>
+        <article class="status-card target reveal"><div class="status-index">NEXT</div><h3>产品型设计师</h3><p>理解目的 → 做出判断 → 深度制作 → 跟踪结果</p><ul><li>保留心流</li><li>掌握方案</li><li>按结果创造价值</li></ul></article>
+      </div>
+      <div class="work-ratio reveal">
+        <div class="ratio-copy"><span>理想工作结构</span><strong id="ratioHeadline">70% 深度制作</strong><p id="ratioText">保留你最擅长、最容易进入心流的部分。</p></div>
+        <div class="ratio-bars" role="img" aria-label="建议工作结构：70%深度制作，20%产品判断，10%客户与结果">
+          <button class="ratio active" style="--w:70%" data-title="70% 深度制作" data-text="保留你最擅长、最容易进入心流的部分。"><span>深度制作</span><b>70%</b></button>
+          <button class="ratio" style="--w:20%" data-title="20% 产品判断" data-text="在打开软件前，先理解用户、卖点、渠道和约束。"><span>产品判断</span><b>20%</b></button>
+          <button class="ratio" style="--w:10%" data-title="10% 客户与结果" data-text="在交付后追踪采用、咨询、成交和用户反馈。"><span>结果复盘</span><b>10%</b></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="routes" class="section-shell block-section">
+      <div class="section-heading reveal"><p class="eyebrow">CAREER ROUTES · 03</p><h2>四种岗位，不必一次全选。</h2><p>点击路线，查看它解决的问题、未来价值和你要补齐的能力。</p></div>
+      <div class="route-layout reveal">
+        <div class="route-tabs" role="tablist" aria-label="职业路线">
+          <button class="route-tab active" role="tab" aria-selected="true" data-route="development"><span>01</span>产品开发负责人</button>
+          <button class="route-tab" role="tab" aria-selected="false" data-route="product"><span>02</span>实体产品经理</button>
+          <button class="route-tab" role="tab" aria-selected="false" data-route="brand"><span>03</span>品牌内容负责人</button>
+          <button class="route-tab" role="tab" aria-selected="false" data-route="design"><span>04</span>设计负责人</button>
+        </div>
+        <article class="route-panel" id="routePanel" aria-live="polite"></article>
+      </div>
+      <div class="route-verdict reveal"><span>建议组合</span><div class="verdict-flow"><b>主线：产品开发</b><i>+</i><b>第二能力：产品判断</b><i>+</i><b>差异化：三维视觉</b></div><p class="deep-copy">不是离开视觉，而是让视觉成为你推动实体产品上市的独特杠杆。</p></div>
+    </section>
+
+    <section id="project" class="project-section">
+      <div class="section-shell">
+        <div class="section-heading light reveal"><p class="eyebrow">REAL PROJECT · 04</p><h2>脚踏项目，就是你的第一座桥。</h2><p>从“做视觉”开始，每次向上游和下游多走一步。点击节点查看本阶段应该参与什么。</p></div>
+        <div class="project-console reveal">
+          <div class="project-rail" role="tablist" aria-label="脚踏项目成长路径">
+            <button class="project-step active" data-step="0"><span>01</span><b>理解需求</b><small>为什么做</small></button>
+            <button class="project-step" data-step="1"><span>02</span><b>产品方案</b><small>做成什么</small></button>
+            <button class="project-step" data-step="2"><span>03</span><b>样品评审</b><small>是否真实</small></button>
+            <button class="project-step" data-step="3"><span>04</span><b>上市视觉</b><small>如何表达</small></button>
+            <button class="project-step" data-step="4"><span>05</span><b>结果复盘</b><small>有没有用</small></button>
+          </div>
+          <article class="project-detail" id="projectDetail" aria-live="polite"></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell block-section" id="capability">
+      <div class="section-heading reveal"><p class="eyebrow">CAPABILITY MAP · 05</p><h2>你的能力不是推倒重来，<br />而是在现有核心外增加三层。</h2></div>
+      <div class="capability-map reveal">
+        <div class="cap-layer core-layer"><span>已有核心</span><b>三维视觉与内容制作</b><small>C4D / Octane / AE / ComfyUI</small></div>
+        <div class="cap-layer"><span>第一层</span><b>产品理解</b><small>用户 · 竞品 · 需求 · 定位 · 卖点</small></div>
+        <div class="cap-layer"><span>第二层</span><b>工业开发</b><small>NX · 材料 · 工艺 · BOM · 打样 · 测试</small></div>
+        <div class="cap-layer"><span>第三层</span><b>商业结果</b><small>渠道 · 成本 · 转化 · 售后 · 复盘</small></div>
+      </div>
+    </section>
+
+    <section id="plan" class="section-shell block-section plan-section">
+      <div class="section-heading reveal"><p class="eyebrow">90-DAY PLAN · 06</p><h2>不要规划十年，先完成第一次角色扩展。</h2><p>勾选会保存在当前浏览器。目标不是忙满，而是积累一条完整证据链。</p></div>
+      <div class="progress-wrap reveal"><div class="progress-copy"><span>行动进度</span><strong id="progressValue">0%</strong></div><div class="progress-track"><i id="progressBar"></i></div></div>
+      <div class="plan-grid">
+        <article class="month-card reveal"><div class="month-head"><span>01</span><div><b>第一个月</b><small>改变接任务方式</small></div></div><label><input type="checkbox" data-task="m1-1"><span>确认目标车型、用户与销售渠道</span></label><label><input type="checkbox" data-task="m1-2"><span>整理脚踏项目的3个核心卖点</span></label><label><input type="checkbox" data-task="m1-3"><span>交付时附上方案选择理由</span></label><p class="deep-copy">成功标志：你不再收到一句话就立即打开软件。</p></article>
+        <article class="month-card reveal"><div class="month-head"><span>02</span><div><b>第二个月</b><small>参与产品上游</small></div></div><label><input type="checkbox" data-task="m2-1"><span>参加一次样品评审或装车测试</span></label><label><input type="checkbox" data-task="m2-2"><span>和销售聊一次客户常见问题</span></label><label><input type="checkbox" data-task="m2-3"><span>开始NX基础学习并重建一个零件</span></label><p class="deep-copy">成功标志：你知道产品从哪里来，而不只看到最终模型。</p></article>
+        <article class="month-card reveal"><div class="month-head"><span>03</span><div><b>第三个月</b><small>独立跑一个小闭环</small></div></div><label><input type="checkbox" data-task="m3-1"><span>负责一个SKU的完整视觉方案</span></label><label><input type="checkbox" data-task="m3-2"><span>跟踪上线后的咨询与反馈</span></label><label><input type="checkbox" data-task="m3-3"><span>完成一份脱敏项目复盘</span></label><p class="deep-copy">成功标志：你能证明自己参与了判断、制作与结果。</p></article>
+      </div>
+    </section>
+
+    <section class="closing section-shell reveal"><p class="eyebrow">YOUR NEXT IDENTITY</p><blockquote>“我不是放弃视觉，<br />而是让视觉进入产品决策。”</blockquote><p>下一步身份：懂实体产品开发、懂三维视觉、懂上市表达的产品型设计师。</p><a class="primary-btn" href="#top">重新看一遍路径</a></section>
+  </main>
+  <footer><span>职业方向导航台</span><span>基于当前职业对话整理 · 个人使用</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
+
