@@ -11,5 +11,6 @@
 
 - [可携带职业资产系统](CAREER_ASSET_SYSTEM.md)
 - [个人设计资产迁移清单](PORTABLE_ASSET_CHECKLIST.md)
+- [市场证据驱动的职业路线](MARKET_EVIDENCE_GUIDE.md)
 
 本仓库用于沉淀个人方法、通用模板、公开来源和脱敏案例。公司源文件、客户数据、商业机密及授权不明素材不应进入个人仓库。
